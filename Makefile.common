@@ -46,7 +46,7 @@ SOURCES_C += $(addprefix $(DEPS_DIR)/libvorbis/lib/,\
 )
 
 # libmad
-CFLAGS += -DFPM_DEFAULT -DSIZEOF_INT=4
+CFLAGS += -DFPM_DEFAULT -DSIZEOF_INT=4 -DHAVE_ASSERT_H
 SOURCES_C += $(addprefix $(DEPS_DIR)/libmad/,\
   version.c fixed.c bit.c timer.c stream.c frame.c \
   synth.c decoder.c layer12.c layer3.c huffman.c \
